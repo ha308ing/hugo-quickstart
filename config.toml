@@ -1,0 +1,4 @@
+baseURL = 'http://example1.net/'
+languageCode = 'ru-ru'
+title = 'Example 1 NET'
+theme = 'ananke'
