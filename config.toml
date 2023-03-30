@@ -2,3 +2,108 @@ baseURL = 'http://example1.net/'
 languageCode = 'ru-ru'
 title = 'Example 1 NET'
 theme = 'ananke'
+enableGitInfo = true
+timeZone = 'Local'
+# Configuration Settings
+# archetypeDir = 'archetypes'
+# assetDir = 'assets'
+# baseURL # hostname and path to the root
+# build
+# buildDrafts = false
+# buildExpired = false
+# buildFuture = false
+# caches
+# cascade
+# canonifyURLs = false
+# cleanDestinationDir = false
+# contentDir = 'content'
+# copyright = ''
+# dataDir = 'data'
+# defaultContentLanguage = 'en'
+# defaultContentLanguageInSubdir = false
+# disableAliases = false
+# disableHugoGeneratorInject = false
+# disableKinds = [] # [ 'page', 'home', 'section', 'taxonomy', 'term', 'RSS', 'sitemap', 'robotsTXT', '404' ]
+# disableLiveReload = false
+# disablePathToLower = false
+# enableEmoji = false
+# enableGitInfo = false
+# enableInlineShortcodes = false
+# enableMissingTranslationPlaceholders = false
+# enableRobotsTXT = false
+# frontmatter
+# googleAnalytics = ''
+# hasCJKLanguage = false # Chinese/Japanese/Korean languages
+# imaging
+# languageCode = ''
+# languages
+# disableLanguages
+# markup
+# mediaTypes
+# menus
+# minify
+# module
+# newContentEditor = ''
+# noChmod = false
+# noTimes = false
+# outputFormats
+# paginate = 10
+# paginatePath = 'page'
+# permalinks
+# pluralizeListTitles = true
+# publishDir = 'public'
+# related
+# relativeURLs = false
+# refLinksErrorLevel = 'ERROR'
+# refLinksNotFoundURL
+# removePathAccents = false
+# rssLimit = -1
+# sectionPagesMenu
+# security
+# sitemap
+# summaryLength = 70
+# taxonomies
+# theme
+# themesDir = 'themes'
+# timesout = '30s'
+# timeZone
+# title
+# titleCaseStyle = 'AP' # 'Chicago', 'Go'
+# uglyURLs = false
+# watch = false
+#
+# Configure Build
+# [build] # Global build-related configuration options
+#   useResourceCacheWhen # [ 'never' | 'always' | 'fallback' ] when yo use the cached resources in /resources/_gen for PostCSS and ToCSS
+#   writeStats
+#   noJSConfigInAssets
+#
+# Configure Server ( hugo server ) put in development environment
+# [server]
+# [[server.headers]]
+#   for = '/**'
+#   [server.headers.values]
+#     Content-Security-Policy = 'script-src localhost:1313'
+#     Referrer-Policy = 'strict-origin-when-cross-origin'
+#     X-Content-Type-Options = 'nosniff'
+#     X-Frame-Options = 'DENY'
+#     X-XSS-Protection = '1; mode=block'
+# [[server.redirects]]
+#   force = false
+#   from = '/myspa/**'
+#   status = 200 # triggers a URL rewrite
+#   to = '/myspa/'
+#   from = '/**'
+#   to = '/404.html'
+#   status = 404
+#
+# Example Configuration
+# baseURL = 'example.com'
+# title = 'Example Site'
+# [params]
+#   AuthorName = 'Jon Doe'
+#   ListOfFoo = ['foo1', 'foo2']
+#   SidebarRecentLimit = 5
+#   Subtitle = 'Example subtitle'
+# [permalinks]
+#   posts = '/:year/:month/:title'
