@@ -34,6 +34,7 @@ timeZone = 'Local'
 # frontmatter
 # googleAnalytics = ''
 # hasCJKLanguage = false # Chinese/Japanese/Korean languages
+# ignoreFiles # [ '\.voo$', '\.boo$' ] use includeFiles excludeFiles mount options instead
 # imaging
 # languageCode = ''
 # languages
@@ -107,3 +108,83 @@ timeZone = 'Local'
 #   Subtitle = 'Example subtitle'
 # [permalinks]
 #   posts = '/:year/:month/:title'
+#
+# [frontmatter]
+#   date = ['date', 'publishDate', 'lastmod']
+#   # date = ['myDate', ':default']
+#   expiryDate = ['expiryDate']
+#   lastmod = [':git', 'lastmod', 'date', 'publishDate']
+#   # lastmod = ['lastmod', ':fileModTime', ':default']
+#   # first try to extract the value for .Lastmod, starting with the lastmod param
+#   # then the content file's modification timestamp
+#   # the last, :default should not be needed here, but Hugo will finally look for a valid date
+#   # in :git, date, and then publishDate
+#   publishDate = ['publishDate', 'date']
+#   # aliases:
+#   # - lastmod -modified
+#   # - publishDate -pubdate
+#   # - expiryDate -unpublishdate
+# :default - shortcut to default settings
+# :fileModTime - fetch date from content file's last modification timestamp
+# :filename - fetch date from filename
+# :git - git author date for the last revision of this content file (only if --enableGitInfo or enableGitInfo = true is set)
+#
+# [mediaTypes]
+#
+# [outputFormats]
+#
+# [minify]
+# disableCSS = false
+# disableHTML = false
+# disableJS = false
+# disableJSON = false
+# disableSVG = false
+# disableXML = false
+# minifyOutput = false
+# [minify.tdewolff]
+# [minify.tdewolff.css]
+# keepCSS2 = true
+# precision = 0
+# [minify.tdewolff.html]
+# keepComments = false
+# keepConditionalComments = true
+# keepDefaultAttrVals = true
+# keepDocumentTags = true
+# keepEndTags = true
+# keepQuotes = false
+# keepWhitespace = false
+# [minify.tdewolff.js]
+# keepVarNames = false
+# noNullishOperator = false
+# precision = 0
+# [minify.tdewolff.json]
+# keepNumbers = false
+# precision = 0
+# [minify.tdewolff.svg]
+# keepComments = false
+# precision = 0
+# [minify.tdewolff.xml]
+# keepWhitespace = false
+#
+# [caches]
+# [caches.assets]
+# dir = ':resourceDir/_gen'
+# maxAge = -1
+# [caches.getcsv]
+# dir = ':cacheDir/:project'
+# maxAge = -1
+# [caches.getjson]
+# dir = ':cacheDir/:project'
+# maxAge = -1
+# [caches.getresource]
+# dir = ':cacheDir/:project'
+# maxAge = -1
+# [caches.images]
+# dir = ':resourceDir/_gen'
+# maxAge = -1
+# [caches.modules]
+# dir = ':cacheDir/modules' # absolute path to directory where cache is stored
+# maxAge = -1 # -1 - forever; 0 - cache off; "10s", "10m", "10h" - Go's time.Duration values
+#   # :cacheDir - value of the cacheDir config option
+#   # :project - current hugo project directory
+#   # :resourceDir - value of the resourceDir config option
